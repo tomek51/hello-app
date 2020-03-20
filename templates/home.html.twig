@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="flex-center full-height">
+    <div class="content">
+        <img src="/img/quebec-flag.png" alt="Quebec flag">
+        <h1 class="title">Hello !</h1>
+        <p> Il est {{ 'now' |date('H:i A', 'Europe/Paris')}} en France.
+
+        <hr>
+
+        <p>&copy; 2018-{{ 'now' |date('Y')}}
+    </div>
+</div>
+
+{% endblock %}
